@@ -1,7 +1,8 @@
 <?php
 
 class Database {
-	protected function connect() {
+	//protected function connect() {
+	public function connect() {
 		try {
 			// Change this to your connection info.
 			$DATABASE_USER = 'root';

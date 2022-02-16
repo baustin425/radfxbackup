@@ -81,6 +81,41 @@
               <label for="date-0803" class="u-label">Date Requested</label>
               <input type="date" placeholder="MM/DD/YYYY" id="date-0803" name="date" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
             </div>
+            
+            <?php
+              include_once 'Database.php';
+
+              $database = new Database();
+
+              $sql = $database->connect()->prepare("DESCRIBE request");
+              $sql->execute();
+              $table = $sql->fetchAll(PDO::FETCH_COLUMN);
+              $caught_up = false;
+              for($x = 0; $x < count($table); $x++) {
+                  if(!$caught_up) {
+                    if($table[$x] == "time_used") {
+                      $caught_up = true;
+                    }
+                  } else {
+                    //still working on this stuff
+                    /*$sql_new = $database->connect()->query("SELECT $table[$x] FROM request");
+                    $meta = $sql_new->getColumnMeta(0);
+                    $comment = $meta["name"];*/
+                    /*$sql_new = $database->connect()->query("SHOW FULL COLUMNS FROM request");
+                    $comment = $sql->fetchAll(PDO::FETCH_ASSOC);
+                    echo '<pre>';
+                    print_r($comment);*/
+
+                    echo "<div class='u-form-group u-form-group-7'>";
+                    echo "<label for='text-53b6' class='u-label'>",$table[$x],"</label>";
+                    echo "<input type='text' placeholder='"," ","' id='text-53b6' name='",$table[$x],"' class='u-border-1 u-border-grey-30 u-input u-input-rectangle u-white' required='required'>";
+                    echo "</div>";
+                  }
+              }
+
+            ?>
+
+
             <div class="u-align-left u-form-group u-form-submit">
               <a href="#" class="u-btn u-btn-submit u-button-style">Submit</a>
               <input type="submit" name="submit" value="submit" class="u-form-control-hidden">

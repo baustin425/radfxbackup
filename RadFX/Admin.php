@@ -78,28 +78,49 @@
                   <div>
                     <label for="date-0803" class="u-label">Original Fields</label>
                   </div>
-                  <div class="u-form-group u-form-select u-form-group-1">
-                    <label for="select-81a6" class="u-label">Facility</label>
-                    <div class="u-form-select-wrapper">
-                      <select id="select-81a6" name="select" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
-                        <option value="Item 1">Item 1</option>
-                        <option value="Item 2">Item 2</option>
-                        <option value="Item 3">Item 3</option>
-                      </select>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
-                    </div>
-                  </div>
-                    <div class="u-form-group u-form-select u-form-group-2">
-                      <label for="select-df75" class="u-label">Test</label>
-                      <div class="u-form-select-wrapper">
-                        <select id="select-df75" name="select-1" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
-                          <option value="Item 1">Item 1</option>
-                          <option value="Item 2">Item 2</option>
-                          <option value="Item 3">Item 3</option>
-                        </select>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
-                      </div>
-                    </div>
+                  <label for="text-53b6" class="u-label">Total Hours</label>
+                  <input type="text" placeholder="Total Requested Hours" id="text-53b6" name="hours" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+            <div class="u-form-group u-form-group-7">
+              <label for="text-53b6" class="u-label">Test Purpose</label>
+              <input type="text" placeholder="Description of the requested test" id="text-53b6" name="purpose" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+            </div>
+            <div class="u-form-group u-form-group-7">
+              <label for="text-53b6" class="u-label">Additional Information</label>
+              <input type="text" placeholder="Any additional important information regarding your test" id="text-53b6" name="info" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+            </div>
+            <div class="u-form-group u-form-group-7">
+              <label for="text-53b6" class="u-label">Energy Level</label>
+              <input type="text" placeholder="Energy level of requested test" id="text-53b6" name="energy" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+            </div>
+            <div class="u-form-group u-form-group-7">
+              <label for="text-53b6" class="u-label">Ions</label>
+              <input type="text" placeholder="Requested Ions" id="text-53b6" name="ions" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+            </div>
+            <div class="u-form-group u-form-select u-form-group-1">
+              <label for="select-81a6" class="u-label">Facility</label>
+              <div class="u-form-select-wrapper">
+                <select id="select-81a6" name="facility" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+                  <option value="Berkeley">Lawrence Berkeley National Laboratory</option>
+                  <option value="A&M">Texas A&M University</option>
+                  <option value="NASA">NASA Space Radiation Laboratory</option>
+                </select>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+              </div>
+            </div>
+            <div class="u-form-group u-form-select u-form-group-2">
+              <label for="select-df75" class="u-label">Vacuum</label>
+              <div class="u-form-select-wrapper">
+                <select id="select-df75" name="vacuum" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+                </select>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+              </div>
+            </div>
+            <div class="u-form-date u-form-group u-form-group-3">
+              <label for="date-0803" class="u-label">Date Requested</label>
+              <input type="date" placeholder="MM/DD/YYYY" id="date-0803" name="date" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+            </div>
                     <div class="u-form-date u-form-group u-form-group-3">
                       <label for="date-0803" class="u-label">Date Requested</label>
                       <input type="date" placeholder="MM/DD/YYYY" id="date-0803" name="date" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
